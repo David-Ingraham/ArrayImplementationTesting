@@ -1,0 +1,74 @@
+There are a fews method testes for for handling an append that exeecds the current array's capactiy. Out of the optins commented out from lines 115 to 120
+in the Mylist.py file the fastest is to multiply the current capacity by 2. Multiplying by smaller factors leads to slower processing speeds. The array needed to 
+rezised far fewer times when mulitplying because the capacatiy size gretly outpaces the number of elements in the array. Having the capacity grow at a greater rate
+than the number stored is the name of the game, which is why adding 2^11 is greater than adding 2^11 each time. 
+
+Multiplying by 10 has fewer copies and resizes, but still takes more time than mulitplying by two. I think this is becuase the cpu/operating system has so much 
+memory to allocate of free up, that the time for even these low level fucntions calls by sheer multitude exceeds the time spent by calling the high level python
+functions. 
+
+
+
+
+
+'******************************
+
+Efficiency after mulitplying capactiy by 10
+
+Avgerage copies : 706067.3333333334 
+Average resizes : 3.6666666666666665 
+Average Length of List : 599902.4333333333  
+Average Time : 2.871149996466666
+
+'******************************
+
+Efficiency report of doubling the capactiy:
+
+Avgerage copies : 751478.4666666667 
+Average resizes : 19.266666666666666 
+Average Length of List : 599902.4333333333  
+Average Time : 2.6368668735
+
+'******************************
+
+Efficiency after mulitplying capactiy by 1.25
+
+Avgerage copies : 2685214.566666667 
+Average resizes : 54.93333333333333 
+Average Length of List : 599902.4333333333  
+Average Time : 5.249632222366667
+
+'******************************
+
+Efficiency after mulitplying by 1.5
+
+Avgerage copies : 1461445.4 
+Average resizes : 31.7 
+Average Length of List : 599902.4333333333  
+Average Time : 3.3918993443999996
+
+'******************************
+
+Efficiency after adding capacity by 1024
+
+Avgerage copies : 217675406.53333333 
+Average resizes : 586.2666666666667 
+Average Length of List : 599902.4333333333  
+Average Time : 218.42456773433338
+
+
+'******************************
+
+Efficiency after adding capacity by 2048
+
+Avgerage copies : 108806232.53333333 
+Average resizes : 293.3333333333333 
+Average Length of List : 599902.4333333333  
+Average Time : 118.42542291480002
+
+
+'******************************
+
+
+
+
